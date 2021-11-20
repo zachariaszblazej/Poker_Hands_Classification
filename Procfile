@@ -1,0 +1,1 @@
+web: gunicorn poker_hands:app
