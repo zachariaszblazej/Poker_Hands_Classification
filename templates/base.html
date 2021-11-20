@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Poker Hand</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    {% block cards %}  {% endblock %}
+
+<form action="predictfigure" method="post">
+
+    {% for idx, suits, ranks in card_selectors %}
+        <div class="card_selector" id="card_sel_{{idx}}">
+
+                <select class="dropdown" id="S{{idx}}" name="S{{idx}}">
+                    {% for value, text, choice in suits %}
+                        <option value="{{value}}" {% if choice=='1' %} selected {% endif %}>{{text}}</option>
+                    {% endfor %}
+                </select>
+
+
+                <select class="dropdown" id="C{{idx}}" name="C{{idx}}">
+                    {% for value, text, choice in ranks %}
+                        <option value={{value}} {% if choice=='1' %} selected {% endif %}>{{text}}</option>
+                    {% endfor %}
+                </select>
+
+            </div>
+    {% endfor %}
+          <input type="submit" value="Predict" id="submit_btn">
+
+    </form>
+
+
+
+{% block result %}  {% endblock %}
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

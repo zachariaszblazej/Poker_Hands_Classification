@@ -1,0 +1,87 @@
+body {
+
+background-image: url("/static/background_main.png");
+
+}
+
+p {
+    display: inline-block;
+    margin-left:860px;
+    margin-top:178px;
+    font-family: Papyrus, fantasy;
+}
+
+.tab {
+    display: inline-block;
+    margin-left:40px;
+}
+
+.card_image{
+    width:125px;
+    height:181px;
+    position: relative;
+    top:200px;
+}
+
+.card_selector{
+    position: relative;
+
+
+}
+
+#card_1 {
+    left:466px;
+}
+
+#card_2 {
+    left:544px;
+}
+
+#card_3 {
+    left:625px;
+}
+
+#card_4 {
+    left:709px;
+}
+
+#card_5 {
+    left:790px;
+}
+
+#submit_btn {
+    position:relative;
+    left:915px;
+    top:153px;
+
+}
+
+#forms {
+    top:200px;
+}
+
+#card_sel_1 {
+    left:467px;
+    top:220px;
+}
+
+#card_sel_2 {
+    left:674px;
+    top:201px;
+}
+
+#card_sel_3 {
+    left:884px;
+    top:182px;
+}
+
+#card_sel_4 {
+    left:1096px;
+    top:163px;
+
+}
+
+#card_sel_5 {
+    left:1307px;
+    top:144px;
+}

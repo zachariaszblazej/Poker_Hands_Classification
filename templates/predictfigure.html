@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block cards %}
+
+    {% for idx, suit, rank in cards %}
+        <img id="card_{{idx}}" class="card_image"  src="static/cards/{{suit}}_{{rank}}.png" alt="card{{idx}}">
+    {% endfor %}
+{% endblock %}
+
+
+{% block result %}
+    <p>{{ prediction }}</p>
+{% endblock %}
