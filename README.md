@@ -1,3 +1,3 @@
 # Poker_Hands_Prediciton
 
-Link to website: https://pokerhandsprediction.herokuapp.com/
+Link to website: https://pokerhandsclassification.herokuapp.com/
